@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audioplayer {
+  z-index: 1;
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+}
+.audioplayer .cover_art {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.audioplayer .controls {
+  font-family: "Open Sans", sans-serif;
+}
+.audioplayer .controls .song-author {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.audioplayer .controls .song-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.audioplayer .controls .time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.audioplayer .controls .time p {
+  margin: 0;
+  font-size: 10px;
+}
+.audioplayer .controls input[type=range] {
+  width: 300px;
+  margin-top: 15px;
+}
+.audioplayer .controls .controls__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.audioplayer .controls .controls__buttons .prev-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.audioplayer .controls .controls__buttons .play-button {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.audioplayer .controls .controls__buttons .next-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

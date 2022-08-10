@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>audio-player</title>
+</head>
+
+<body>
+    <main class="container">
+        <!-- <img src="./src/assets/img/lemonade.png" alt="" class="background"> -->
+        <div class="audioplayer">
+            <img src="./src/assets/img/lemonade.png" class="cover_art">
+            <div class="controls">
+                <h3 class="song-author">Beyonce</h3>
+                <p class="song-title">Don't hurt yourself</p>
+                <input type="range" name="" id="">
+                <div class="time">
+                    <p class="current_time">0:00</p>
+                    <p class="rest_time">3:26</p>
+                </div>
+                <div class="controls__buttons">
+                    <img src="./src/assets/svg/backward.png" class="prev-button">
+                    <img src="./src/assets/svg/play.png" class="play-button">
+                    <img src="./src/assets/svg/forward.png" class="next-button">
+                </div>
+            </div>
+        </div>
+        <audio src="./src/assets/audio/beyonce.mp3"></audio>
+    </main>
+</body>
+
+</html>
