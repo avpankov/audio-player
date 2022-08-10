@@ -33,12 +33,12 @@ body {
 .audioplayer .controls {
   font-family: "Open Sans", sans-serif;
 }
-.audioplayer .controls .song-author {
+.audioplayer .controls .audio-author {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
 }
-.audioplayer .controls .song-title {
+.audioplayer .controls .audio-title {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
