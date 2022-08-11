@@ -12,8 +12,15 @@ body {
     align-items: center;
 }
 
-.audioplayer {
+.background {
+    position: absolute;
     z-index: 1;
+    height: 100vh;
+    filter: blur(40px) brightness(1.4);
+}
+
+.audioplayer {
+    z-index: 2;
     width: 300px;
     padding: 5px;
     display: flex;
@@ -21,12 +28,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
+    background-color: rgb(238, 238, 238);
     box-shadow: 0 0 10px gray;
     border-radius: 10px;
 
     .cover_art {
-        width: 95%;
-        height: 95%;
+        width: 285px;
+        height: 285px;
         border-radius: 10px;
         margin-bottom: 15px;
     }
@@ -36,14 +44,14 @@ body {
 
         .audio-author {
             margin: 0;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 400;
         }
 
         .audio-title {
             margin: 0;
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 600;
         }
         .time {
             display: flex;
@@ -56,9 +64,35 @@ body {
             }
         }
 
-        input[type="range"] {
+        .timeline {
             width: 300px;
-            margin-top: 15px;
+            height: 3px;
+            background-color: white;
+            opacity: .7;
+            border-radius: 2px;
+            margin: 10px 0 5px;
+            cursor: pointer;
+
+            .progress {
+                width: 0%;
+                height: 3px;
+                border-radius: 2px;
+                background-color: black;
+                position: relative;
+                cursor: pointer;
+                
+                .circle {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: black;
+                    border-radius: 50%;
+                    top: -3.5px;
+                    right: -5px;
+                    cursor: pointer;
+                }
+            }
+
         }
 
         .controls__buttons {
